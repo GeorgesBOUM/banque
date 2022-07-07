@@ -26,4 +26,12 @@ public class AgentController {
 	return as.getAllAgents();
     }
     
+    @GetMapping("/Agents/{agentName}") 
+    public Optional<Agent> getAgentByName(@PathVariable String name){
+	List<Agent> listeDesAgents = this.getAllAgents();
+	Optional<Agent> agentTrouve =  listeDesAgents.stream()
+		      .filter(agent -> agent.getNom().equals(name))
+		      .findFirst();
+	return agentTrouve;
+    }
 }
