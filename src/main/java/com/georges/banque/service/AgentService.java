@@ -22,4 +22,12 @@ public class AgentService {
     public List<Agent> getAllAgents() {
 	return Lists.newArrayList(ar.findAll());
     }
+    
+    public Agent addAgent(Agent agent) {
+	return ar.save(agent);
+    }
+    
+    public void deleteAgent(Agent agent) {
+	ar.delete(agent);
+    }
 }
