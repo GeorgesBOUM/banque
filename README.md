@@ -4,8 +4,8 @@ projet banque (inspiré par Anne Tasso)
 ## <u>Le modèle</u>
 #### Agent (id, nom, prenom, listeDeClients)
 On doit pouvoir :
-* Afficher les informations d'un agent ayant son id ou son nom
-* Afficher les informations d'un client de l'agent ayant le nom du client ou son id
+* Retrouver un agent ayant son id ou son nom
+* Retrouver un client ayant le nom du client ou son id
 * Ajouter un agent
 * Ajouter un client à un agent
 * Supprimer définitivement un client
